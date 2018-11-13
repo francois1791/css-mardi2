@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "components/*"; 
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+body{
+    background-image: url("/images/hsg.jpg");
+    background-size: 100%;
+}
+
+.card{
+    margin-top: 8%;
+    margin-left: 35%;
+    width: 400px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#e66465, #9198e5);
+    border-color: white;
+    border-radius: 25px;
+    border-width: 10px;
+    
+}
+.avatar img{
+    padding: 25px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+.description{
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 25px;
+}
